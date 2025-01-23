@@ -20,7 +20,7 @@ The Solar Pi Platter is a versatile expansion board for the Raspberry Pi Zero W 
     - Watchdog timer
 
 # Description of basic tests
-In basic tests folder, several tests written on python are purposed in order to test separately the  BMP388 sensor and the LoRa protocol. These tests come directly from the manufacturers.
+In basic tests folder, several tests written on python are purposed in order to test separately the sensor module and the LoRa protocol. These tests come directly from the manufacturers.
 
 ## Test I2C bus in parallel mode
 According to python3 is installed, run the script **test_parallel_i2c.py** to check if I2C bus can work on parallel mode (screen display of Adafruit LoRa Radio Bonnet). To verify that they are working properly, we just have to watch if on the screen display there is the same temperature as on the command line. If it is the case, and the temperature is not a nonsense, this would mean that your BME280 sensor is measuring while the display is done, so it all works well. To verify if the values of your BME280 sensor are real you can try to touch the sensor and the temperature should increase.
@@ -30,11 +30,13 @@ According to python3 is installed, run these scripts to chipset radio (RFM95) an
     
     - test_rfm9x.py to check the Adafruit radio+oled Bonnet
     - test_send_ttn_abp.py to check if a random data can be transmitted on the TTN network application
-    - test_sensors.py to check if environmemnt data have been collected
 
 To test the LoRa device (both sending and receiving), we need to execute the **test_rfm9x.py**. Then, after that, we have to look at the screen and see the output. If the radio module is not detected, it will display RFM69: ERROR. However, if everything works correctly and you press the three buttons (one by one) you should see "ada fruit radio". If you are able to see these messages the hardware should be ready to start working as well as the libraries and dependencies..
 
 To verify that you receive the packets on your TTN application, run **test_send_ttn_abp.py**.
+
+## Test Waveshare Sensor Hat module
+According to python3 is installed, run **test_sensors.py** to test if the environment sensor module gives good values. Then the values related to the current environment will be printed.
 
 # Description of datasheet/schematic/tutorial
 This folder contains datasheet of the only environment sensors module of our project (Waveshare Sensor Hat) and the LoRa chipset radio (RFM95W inlcude on Adafruit's LoRa Radio Bonnet).
