@@ -3,7 +3,7 @@
 
 ## Step 1 : Installation of requirements and dependencies
 
-The script install can be found in the **02-configuration folder**. This script will enable the I2C and SPI interface, install the BMP388 requirements, the LoRa Radio Bonnet requirements and the Solar Pi Platter drivers (talkpp and ppd). When the script will be done, we recommend you to test both the LoRa module and the environmental sensor module to verify that everything is working correctly.
+The script install can be found in the **02-configuration folder**. This script will enable the I2C and SPI interface, install the environment sensor hat requirements, the LoRa Radio Bonnet requirements and the Solar Pi Platter drivers (talkpp and ppd). When the script will be done, we recommend you to test both the LoRa module and the environmental sensor module to verify that everything is working correctly.
 All tests can be found in the **01-hardware folder**. We invite you to read the **README_HARD.md** file present in this folder which describes hardware and software of this project.
 
 To run as sudo user, tape : **sudo \\.pp_config_install.sh** or **sudo bash pp_config_install.sh**
@@ -24,10 +24,16 @@ You will need to register a new device in your application (with ABP activation 
         Regional Parameter Version      PHY V1.0
         Activation by personalization   ABP
         Application ID                  your application ID
-        DevUI number                    your DevUI number
-        Device ID                       your End Device ID
-        NwkSKey                         NwkSKey
-        AppSKey                         your AppSKey
+        Device UI number 1              70B3D57ED00485A9    (experimental node)
+        Device Address                  26013D54
+        Device UI number 2              53FE3088CD90A8F8    (production node 1)
+        Device Address                  0085BBCA
+        Device UI number 3              FD82EB4614C577DE    (production node 2)
+        Device Address                  01102734
+        Device UI number 4              5260A4E9204E92EC    (production node 3)
+        Device Address                  008C2331
+        NwkSKey                         0FFEDF1D366D518976D776BB92A59AE9
+        AppSKey                         4AD7B63F86ABC754CF268EE560DE1C99
 
 After the test (test_send_lora.py) purposed in **01-hardware/tests**, you have to paste the **file payload_format.js** into the TTN application decoder function so you can read the packets content in real time already decrypted.
 
