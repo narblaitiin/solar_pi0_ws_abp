@@ -31,7 +31,7 @@ lora.frame_counter = 0
 # SF7BW125, SF7BW250, SF8BW125, SF9BW125, SF10BW125, SF11BW125, SF12BW125
 lora.set_datarate("SF12BW125")
 
-for meas in range (0, 5, 1):
+for meas in range (0, 50, 1):
     data = bytearray(b"\x43\x57\x54\x46")
     print("Sending packet...")
     lora.send_data(data, len(data), lora.frame_counter)
