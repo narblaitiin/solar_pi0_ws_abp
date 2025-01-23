@@ -152,6 +152,28 @@ The idea is to plug a board above the Adafruit LoRa bonnet with tne same pinout 
     SDA         SDI serial I2C data connected to SDA
     SCL         SCK serial I2C clock connected to SCK
 
+## Waveshare Sensor Hat
+
+This environment sensors module gives Raspberry Pi the ability to collect environmental data like temperature & humidity, air pressure, ambient light intensity, VOC, IR ray, UV ray.
+
+#### Features
+
+    - 40PIN GPIO, Compatible with all the Raspberry Pi Boards.
+    - Onboard TSL25911FN digital ambient light sensor, for measuring IR and visible light.
+    - Onboard BME280 sensor, for measuring temperature, humidity, and air pressure.
+    - Onboard ICM20948 motion sensor, accelerometer, gyroscope, and magnetometer.
+    - Onboard LTR390-UV-1 sensor, for measuring UV rays.
+    - Onboard SGP40 sensor, for detecting ambient VOC.
+    - I2C bus allows reading and displaying data by just using two wires.
+
+#### Sensor breakout pinout
+
+    Sensor      GPIO       
+    VDD         2, 4
+    GND         6, 9, 14, 20, 25, 30, 34, 39
+    SCL         5 (SCL)
+    SDA         3 (SDA)
+
 # Documentation about talkpp/ppd drivers
 
 This directory contains Raspbian utility software for the Solar Pi Platter board.
