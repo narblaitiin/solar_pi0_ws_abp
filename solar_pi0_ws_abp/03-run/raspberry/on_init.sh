@@ -73,7 +73,7 @@ else
     # initialisation of our raspberry pi zero
 	echo $MYDATE,$BATT,$STATUS >> ../solar_pi0_ws_abp/05-Data/power_info.txt
 	cd ../solar_pi0_ws_abp/03-run/raspberry
-    sudo python lorawan_bmp388.py
+    sudo python lorawan_sensor.py
 fi
 
 echo "shutdown Pi Platter board"
