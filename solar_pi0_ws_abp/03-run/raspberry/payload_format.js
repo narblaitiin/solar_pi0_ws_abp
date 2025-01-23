@@ -6,6 +6,9 @@ function Decoder(bytes, port) {
     }else{
         decoded.Temperature = (((bytes[3] << 8)| bytes[4]) * -1)/100
     }
- 
+
+    decoded.Humidity = ((bytes[5] << 8) | bytes[6])/100
+    decoded.Luxmen = ((bytes[7] << 8) | bytes[8])/100
+    decoded.UV = ((bytes[9] << 8) | bytes[10])/100
     return decoded;
   }
