@@ -39,7 +39,7 @@ To verify that you receive the packets on your TTN application, run **test_send_
 According to python3 is installed, run **test_sensors.py** to test if the environment sensor module gives good values. Then the values related to the current environment will be printed.
 
 # Description of datasheet/schematic/tutorial
-This folder contains datasheet of the only environment sensors module of our project (Waveshare Sensor Hat) and the LoRa chipset radio (RFM95W inlcude on Adafruit's LoRa Radio Bonnet).
+This folder contains datasheet of the only environment sensors module of our project (Waveshare Environment Sensor Hat) and the LoRa chipset radio (RFM95W inlcude on Adafruit's LoRa Radio Bonnet).
 It also contains the schematic of the Solar Pi Platter board and different tutorials in order to understand I2C bus and use Solar Pi Platter drivers. A brief description of Raspberry Pi Zero W  GPIO board is added.
 
 **Datasheet**
@@ -53,7 +53,7 @@ It also contains the schematic of the Solar Pi Platter board and different tutor
 
 **Schematic**
 
-This file (pi_platter_sch.pdf) contains the electrical schematic of Solar Pi Platter board from danjuliodesigns
+This file (pi_platter_sch.pdf) contains the electrical schematic of Solar Pi Platter board from danjuliodesigns. According https://www.waveshare.com/wiki/Environment_Sensor_HAT, environment_sensor_hat_sch.pdf give you the schematic of the module.
 
 **Tutorial**
 
