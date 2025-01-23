@@ -23,17 +23,11 @@ You will need to register a new device in your application (with ABP activation 
         LoRaWAN Version                 MAC V1.0
         Regional Parameter Version      PHY V1.0
         Activation by personalization   ABP
-        Application ID                  solar-pi0-ws-app
-        DevUI number 1                  9E0745D527C4ADC9    (experimental node)
-        Device                          26013D54
-        DevUI number 2                  53FE3088CD90A8F8    (production node 1)
-        Device                          0085BBCA
-        DevUI number 3                  FD82EB4614C577DE    (production node 2)
-        Device                          01102734
-        DevUI number 4                  5260A4E9204E92EC    (production node 3)
-        Device                          008C2331
-        NwkSKey                         0FFEDF1D366D518976D776BB92A59AE9
-        AppSKey                         4AD7B63F86ABC754CF268EE560DE1C99
+        Application ID                  your application ID
+        DevUI number                    your DevUI number
+        Device ID                       your End Device ID
+        NwkSKey                         NwkSKey
+        AppSKey                         your AppSKey
 
 After the test (test_send_lora.py) purposed in **01-hardware/tests**, you have to paste the **file payload_format.js** into the TTN application decoder function so you can read the packets content in real time already decrypted.
 
