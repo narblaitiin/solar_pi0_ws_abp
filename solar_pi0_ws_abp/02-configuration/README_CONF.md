@@ -3,7 +3,7 @@
 
 ## Step 1 : Installation of requirements and dependencies
 
-The script install can be found in the **02-configuration folder**. This script will enable the I2C and SPI interface, install the BMP388 requirements, the LoRa Radio Bonnet requirements and the Solar Pi Platter drivers (talkpp and ppd). When the script will be done, we recommend you to test both the LoRa module and the BMP388 sensor to verify that everything is working correctly.
+The script install can be found in the **02-configuration folder**. This script will enable the I2C and SPI interface, install the BMP388 requirements, the LoRa Radio Bonnet requirements and the Solar Pi Platter drivers (talkpp and ppd). When the script will be done, we recommend you to test both the LoRa module and the environmental sensor module to verify that everything is working correctly.
 All tests can be found in the **01-hardware folder**. We invite you to read the **README_HARD.md** file present in this folder which describes hardware and software of this project.
 
 To run as sudo user, tape : **sudo \\.pp_config_install.sh** or **sudo bash pp_config_install.sh**
