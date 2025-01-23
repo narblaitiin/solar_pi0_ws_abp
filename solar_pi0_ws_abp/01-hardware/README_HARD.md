@@ -29,7 +29,8 @@ According to python3 is installed, run the script **test_parallel_i2c.py** to ch
 According to python3 is installed, run these scripts to chipset radio (RFM95) and the TTN communication :
     
     - test_rfm9x.py to check the Adafruit radio+oled Bonnet
-    - test_send_lora.py to check if a data from the BME280 can be transmitted on the TTN network application
+    - test_send_lora.py to check if a random data can be transmitted on the TTN network application
+    - test_sensors.py to check if environmemnt data have been collected
 
 To test the LoRa device (both sending and receiving), we need to execute the **test_rfm9x.py**. Then, after that, we have to look at the screen and see the output. If the radio module is not detected, it will display RFM69: ERROR. However, if everything works correctly and you press the three buttons (one by one) you should see "ada fruit radio". If you are able to see these messages the hardware should be ready to start working as well as the libraries and dependencies..
 
