@@ -73,7 +73,7 @@ In this project, we will use :
 
     - Solar Pi Platter board for Pi Zero V1.3 by danjuliodesigns
     - Raspberry Pi Zero W v1.1
-    - Senseor Bosh BMP388 mounted onto BMP3xy extended shuttle board
+    - Waveshare Sensor hat extended shuttle board
     - Adafruit Lora Radio Bonnet with Oled - RFM95W @ 915MHz
 
 ## Solar Pi Platter board
