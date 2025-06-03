@@ -47,9 +47,6 @@ sudo pip3 install adafruit-circuitpython-framebuf
 sudo pip3 install adafruit-circuitpython-rfm9x
 sudo pip3 install adafruit-circuitpython-tinylora
 
-# BMP388 sensor dependencies
-#sudo pip3 install adafruit-circuitpython-bmp3xx
-
 # Waveshare Sensor Hat dependencies
 sudo apt-get install python3-smbus
 sudo -H apt-get install python3-pil

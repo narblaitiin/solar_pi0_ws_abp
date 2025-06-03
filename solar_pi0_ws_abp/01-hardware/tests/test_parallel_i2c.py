@@ -15,23 +15,10 @@ from time import sleep
 #i2c = busio.I2C(board.SCL, board.SDA)
 
 # create library object using our Bus I2C port
-#bmp = adafruit_bmp3xx.BMP3XX_I2C(i2c)
 bme280 = BME280.BME280()
-
-# change this to match the location's pressure (hPa) at sea level
-#bmp.sea_level_pressure = 1013.25
-
-# no IIR filter, no osr for lowest power (case of weather monitoring)
-#bmp.pressure_oversampling = 1
-#bmp.temperature_oversampling = 1
 
 # calibrate bme280 sensor
 bme280.get_calib_param()
-
-# you will usually have to add an offset to account for the temperature of
-# the sensor. This is usually around 5 degrees but varies by use. Use a
-# separate temperature sensor to calibrate this one.
-#temperature_offset = -5
 
 # 128x32 OLED display
 reset_pin = DigitalInOut(board.D4)
@@ -56,7 +43,6 @@ for meas in range (0,5,1):
     msg += "Temperature: %-6.2f C\n" % temp
     msg += "Pressure: %7.2f hPa\n" % pressure
     msg += "Humidity %6.2f ％\n" % hum
-    msg += "Gas: %6.2f\n" % gas
 
     display.fill(0)
     display.text(msg, 0, 0, 1)

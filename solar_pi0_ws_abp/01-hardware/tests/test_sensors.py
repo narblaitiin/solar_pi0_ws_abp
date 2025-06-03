@@ -4,7 +4,7 @@
 
 import time, busio, board
 import ICM20948     # 3-axis accelerometer, 3-axis gyroscrope, 3-axis magnetometer
-import MPU925x     # 3-axis accelerometer, 3-axis gyroscrope, 3-axis magnetometer
+import MPU925x      # 3-axis accelerometer, 3-axis gyroscrope, 3-axis magnetometer
 import BME280       # measuring temperature, humidity, and air pressure sensor
 import LTR390       # UV sensor
 import TSL2591      # digital ambient light sensor, for measuring IR and visible light

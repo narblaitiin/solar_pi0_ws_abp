@@ -24,16 +24,10 @@ You will need to register a new device in your application (with ABP activation 
         Regional Parameter Version      PHY V1.0
         Activation by personalization   ABP
         Application ID                  your application ID
-        Device UI number 1              70B3D57ED00485A9    (experimental node)
-        Device Address                  26013D54
-        Device UI number 2              53FE3088CD90A8F8    (production node 1)
-        Device Address                  0085BBCA
-        Device UI number 3              FD82EB4614C577DE    (production node 2)
-        Device Address                  01102734
-        Device UI number 4              5260A4E9204E92EC    (production node 3)
-        Device Address                  008C2331
-        NwkSKey                         0FFEDF1D366D518976D776BB92A59AE9
-        AppSKey                         4AD7B63F86ABC754CF268EE560DE1C99
+        Device UI number 1              random value for 8-byte address (experimental node)
+        Device Address                  random value for 4-byte address
+        NwkSKey                         random value for 16-byte address
+        AppSKey                         random value for 16-byte address
 
 After the test (test_send_ttn_abp.py) purposed in **01-hardware/tests**, you have to paste the **file payload_format.js** into the TTN application decoder function so you can read the packets content in real time already decrypted.
 
@@ -54,18 +48,8 @@ You have to have the permission of the administrator to enter into the SPIIOT pl
         check "Create Device"
     - After that, you have to activate the device. So, you have to go to Activation field :
         generate a random Device Adrress
-        NwkSKey                         0FFEDF1D366D518976D776BB92A59AE9
-        AppSKey                         4AD7B63F86ABC754CF268EE560DE1C99
-
-For now, we have four connnected nodes :
-    Device UI number 1                  70B3D57ED00485A9    (experimental node)
-    Device Address                      26013D54
-    Device UI number 2                  53FE3088CD90A8F8    (production node 1)
-    Device Address                      0085BBCA
-    Device UI number 3                  FD82EB4614C577DE    (production node 2)
-    Device Address                      01102734
-    Device UI number 4                  5260A4E9204E92EC    (production node 3)
-    Device Address                      008C2331
+        NwkSKey                         random value for 16-byte address
+        AppSKey                         random value for 16-byte address
     
 After the test (test_send_lora.py) purposed in **01-hardware/tests**, you have to paste the **file payload_format.js** into the LORAWAN FRAMES application decoder function so you can read the packets content in real time already decrypted.
 
@@ -132,31 +116,6 @@ The LoRa Radio Bonnet will be directly plugged into the board (as it is an all-e
     Button1     5
     Button2     6
     Button3     12
-
-## BMP3xy breakout pinout
-
-The idea is to plug a board above the Adafruit LoRa bonnet with tne same pinout (GPIO of standard Pi Zero). As the sensor measures temperature and pressure outside a box, and the Solar Pi Platter solution is plugged inside a box, we have to deport the connection of the sensor board to the Adafruit LoRa bonnet by wires which will be interconnected.
-
-**BMP388**
-
-    - VDDIO : digital interface supply
-    - VDD : analog supply
-    - SCK : serial clock input
-    - VSS : ground
-    - SDI : serial data input
-    - SDO : serial data output
-    - CSB : chip select
-    - INT : interrupt output
-
-#### BMP3xy breakout pinout
-
-    BMP3xy      LoRA Radio Bonnet
-    VDD         analog supply connected to +3.3V
-    VDDIO       digital supply connected to +3.3V
-    GND         ground connected to GND
-    IO2         SDO I2C address pin select connected GND (1110110 I2C address)
-    SDA         SDI serial I2C data connected to SDA
-    SCL         SCK serial I2C clock connected to SCK
 
 ## Waveshare Sensor Hat
 
