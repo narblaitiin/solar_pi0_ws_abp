@@ -139,6 +139,39 @@ This environment sensors module gives Raspberry Pi the ability to collect enviro
     SCL         5 (SCL)
     SDA         3 (SDA)
 
+#### Specifications
+
+**TSL25911 digital ambient light sensor**
+I2C address                             0x29
+Effective range	                        0~88000Lux
+
+**BME280 Temperature, Humidity, and Air pressure sensor**
+I2C address	                            0x76
+Temperature detection	                -40~85°C (0x01°C resolution, ±1°C accuracy)
+Humidity detection	                    0~100%RG (0.008%RH resolution, ±3%RH accuracy, 1s response time, ≤2%RH delay)
+Air pressure detection	                300~1100hPa (0x18Pa resolution, ±1hPa accuracy)
+
+**ICM20948 Motion Sensor**
+(9-DOF: 3-Axis accelerometer, 3-axis gyroscrope, 3-axis magne tometer)
+I2C address	                            0x68
+Accelerometer resolution	            16-bit
+Accelerometer range (configurable)	    ±2, ±4, ±8, ±16g
+Gyroscope resolution	16-bit
+Gyroscope range (configurable)	        ±250, ±500, ±1000, ±2000°/sec
+Magnetometer resolution	                16-bit
+Magnetometer range	                    ±4900µT
+
+**LTR390-UV-1 uv sensor**
+I2C Address	                            0x53
+Response wavelength	                    280nm - 430nm
+
+**SGP40 VOC sensor**
+I2C Address	                            0x60
+Measuring range	                        0 ~ 1,000 ppm ethanol equivalent
+Limit condition	                        <0.05 ppm ethanol equivalent OR < 10% preset concentration point (the larger one should prevail)
+Response time	                        <10 s (tau 63%)
+Start time	                            < 60s
+
 # Documentation about talkpp/ppd drivers
 
 This directory contains Raspbian utility software for the Solar Pi Platter board.
